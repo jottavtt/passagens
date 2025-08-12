@@ -1,0 +1,8 @@
+[build]
+  base = "frontend"
+  command = "npm ci && npm run build"
+  publish = "frontend/dist"
+
+[build.environment]
+  NODE_VERSION = "20"
+  # Defina VITE_API_URL no painel do Netlify para apontar para o backend

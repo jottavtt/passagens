@@ -1,0 +1,12 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "version": 2,
+  "name": "tarifaninja-frontend",
+  "builds": [{ "src": "frontend/package.json", "use": "@vercel/static-build" }],
+  "env": {
+    "VITE_API_URL": ""
+  },
+  "framework": null,
+  "github": { "enabled": true },
+  "ignoreCommand": "echo ok"
+}

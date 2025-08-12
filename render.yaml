@@ -1,0 +1,22 @@
+services:
+  - type: web
+    name: tarifaninja-api
+    env: docker
+    rootDir: backend
+    plan: free
+    dockerfilePath: ./Dockerfile
+    autoDeploy: true
+    envVars:
+      - key: AMADEUS_BASE
+        value: https://test.api.amadeus.com
+      - key: DEFAULT_CURRENCY
+        value: BRL
+      # Preencha no painel (ou aqui) quando tiver as chaves reais:
+      # - key: AMADEUS_CLIENT_ID
+      #   sync: false
+      # - key: AMADEUS_CLIENT_SECRET
+      #   sync: false
+      # - key: TEQUILA_API_KEY
+      #   sync: false
+      # - key: REDIS_URL
+      #   sync: false
